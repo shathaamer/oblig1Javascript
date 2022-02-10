@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>oblig1.Kenan</title>
+    <h1>Bestilling av kinobiletter</h1>
+    <script src="index.js"></script>
+
+</head>
+<body>
+<form id="reset">
+    <section>
+        <div>
+            Velg film:
+            <select id="velgFilm"  type="text">
+                <option></option>
+                <option>Don't look up</option>
+                <option>The revenant</option>
+                <option>Verdens verste menneske</option>
+                <option>Parasitt</option>
+            </select><lable id="nullFilm" style="color: red"></lable>
+            <br>
+
+            </br>
+            Antall:
+            <input style="width: 30px"  type="number" id="antall"  min="1">
+            <label style="color: red" id="nullAntall"></label>
+        </div>
+        <div>
+            <table>
+                <br>
+                <tr>
+                    <td>Fornavn:</td>
+                    <td><input type="text" id="fornavn" ></td>
+                    <td><label id="nullFornavn" style="color: red"></label></td>
+                </tr>
+                <tr>
+                    <td>Etternavn:</td>
+                    <td><input type="text" id="etternavn" ></td>
+                    <td><lable id="nullEtternavn" style="color: red"></lable></td>
+                </tr>
+                <tr>
+                    <td>Telefonnr:</td>
+                    <td><input type="tel" id="telefonnr"></td>
+                    <td><label id="nullTelefonnr" style="color: red"></label></td>
+                </tr>
+                <tr> <td>Epost:</td>
+                    <td><input type="email" id="epost"></td>
+                    <td><label id="nullEpost" style="color: red"></label></td>
+                </tr>
+            </table>
+        </div>
+    </section>
+</form>
+<br>
+<button STYLE="border-radius: 10%; cursor: pointer" onclick="kjopbillett()"  >Kjøp billett</button>
+
+<div>
+    <br>
+    <h2>Alle billetter</h2>
+</div>
+<div>
+    <h2 id="Ut">Film Antall Fornavn Etternavn Telefon Epost</h2>
+</div>
+<button style="border-radius: 10%; cursor: pointer"  onclick="slett()">slett allle billettene</button>
+</body>
+</html>
